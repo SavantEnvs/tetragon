@@ -1,0 +1,7 @@
+# Effective ignore file for `docker build -f mayhem/Dockerfile` (BuildKit prefers it over the
+# root .dockerignore, which upstream uses as an allow-list that would drop most of the tree and .git).
+# Bake in the FULL repo incl. .git history; drop only local build output and editor cruft.
+mayhem/build/
+.DS_Store
+*.swp
+*~

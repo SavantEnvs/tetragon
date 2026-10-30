@@ -1,0 +1,9 @@
+project: savantenvs/tetragon
+target: protojson-compat
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/protojson-compat/testsuite
+cmds:
+  - cmd: /mayhem/protojson-compat
+    libfuzzer: true
+    timeout: 10

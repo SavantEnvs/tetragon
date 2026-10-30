@@ -1,0 +1,9 @@
+project: savantenvs/tetragon
+target: compact-encoder
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/compact-encoder/testsuite
+cmds:
+  - cmd: /mayhem/compact-encoder
+    libfuzzer: true
+    timeout: 10

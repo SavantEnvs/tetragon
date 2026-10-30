@@ -1,0 +1,9 @@
+project: savantenvs/tetragon
+target: glob-get-literals
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/glob-get-literals/testsuite
+cmds:
+  - cmd: /mayhem/glob-get-literals
+    libfuzzer: true
+    timeout: 10
